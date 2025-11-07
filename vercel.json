@@ -1,7 +1,7 @@
 {
     "version": 2,
     "builds": [
-        { "src": "index.php", "use": "@vercel/php" },
+        { "src": "api/index.php", "use": "@vercel/php" },
         { "src": "admin/**/*.php", "use": "@vercel/php" },
         { "src": "auth/**/*.php", "use": "@vercel/php" }
     ],
@@ -9,4 +9,5 @@
         { "src": "/(.*\\.php)$", "dest": "/$1" },
         { "src": "/(.*)", "dest": "/index.php" }
     ]
+
 }
